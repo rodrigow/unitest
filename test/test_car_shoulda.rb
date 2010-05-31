@@ -2,9 +2,9 @@
 require 'rubygems' 
 gem 'thoughtbot-shoulda' 
 require 'shoulda'
-require 'src/car'
+require 'lib/car'
 
-class CarTest < Test::Unit::TestCase
+class TestCarShoulda < Test::Unit::TestCase
 
   context "a car" do
 

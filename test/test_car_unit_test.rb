@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 require 'test/unit'
-require 'src/car'
+require 'lib/car'
 
-class CarTest < Test::Unit::TestCase
+class TestCarUnitTest < Test::Unit::TestCase
 
   def setup
     @car = Car.new

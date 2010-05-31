@@ -10,4 +10,8 @@ class Car
   def turn_on
     @engine_state = true
   end
+  
+  def turn_off
+    @engine_state = false
+  end
 end

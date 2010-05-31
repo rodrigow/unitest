@@ -2,16 +2,15 @@
 class Car
   attr_accessor :engine_state
   
-  
   def initialize
-    @engine_state = false
+    @engine_state = :off
   end
   
   def turn_on
-    @engine_state = true
+    @engine_state = :on
   end
   
   def turn_off
-    @engine_state = false
+    @engine_state = :off
   end
 end

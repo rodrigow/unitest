@@ -1,21 +1,30 @@
 #!/usr/bin/ruby
-require 'test/unit'
+require 'rubygems' 
+gem 'thoughtbot-shoulda' 
+require 'shoulda'
 require 'car'
 
 class CarTest < Test::Unit::TestCase
 
-  def setup
-    @car = Car.new    
-  end
-  
-  def test_should_turn_on_the_engine
-    @car.turn_on
-    assert @car.engine_state
-  end
-  
-  def test_should_turn_of_the_engine
-    @car.turn_off
-    assert !@car.engine_state
+  context "a car" do
+
+    setup do
+      @car = Car.new    
+    end
+
+    should 'turn on the engine' do
+      @car.turn_on
+      assert_equal :on, @car.engine_state
+    end
+
+    should 'turn of the engine' do
+      @car.turn_off
+      assert_equal :off, @car.engine_state
+    end
+
+    should 'be instance of a Car class' do
+      assert_instance_of Car, @car
+    end
   end
 end
 

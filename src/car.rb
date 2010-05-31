@@ -3,7 +3,7 @@ class Car
   attr_accessor :engine_state
   
   def initialize
-    @engine_state = :off
+    @engine_state = nil
   end
   
   def turn_on

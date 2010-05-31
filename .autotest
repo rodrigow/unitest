@@ -1,0 +1,8 @@
+require "test_notifier/autotest"
+require 'redgreen/autotest'
+
+Autotest.add_hook :initialize do |autotest|
+  %w{.git tmp log doc README}.each do |exception|
+    autotest.add_exception(exception)
+  end
+end

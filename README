@@ -1,0 +1,23 @@
+README
+======
+
+Unit Test on Ruby.
+
+
+Plugins
+-------
+-test-unit
+-thoughtbot-shoulda
+-rspec
+-ZenTest
+-hoe
+-json_pure
+-rake
+-rubyforge
+-redgreen
+-test_notifier
+
+
+
+Instruction to install ZenTest:
+http://ph7spot.com/musings/getting-started-with-autotest

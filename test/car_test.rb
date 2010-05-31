@@ -2,7 +2,7 @@
 require 'rubygems' 
 gem 'thoughtbot-shoulda' 
 require 'shoulda'
-require 'car'
+require '../src/car'
 
 class CarTest < Test::Unit::TestCase
 
